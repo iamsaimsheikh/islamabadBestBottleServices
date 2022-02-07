@@ -160,6 +160,9 @@ function Main() {
         <button type='submit' onClick={(e) =>onSubmitHandler(e)}>Submit</button>
 
       </form>
+
+      <div className='spacer'></div>
+
   </div>;
 }
 

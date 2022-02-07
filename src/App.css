@@ -6,8 +6,9 @@
 }
 
 .form-container{
+  position: absolute;
   width: 100vw;
-  height: 100vh;
+  height:fit-content;
   background-color: #1d2951;
   display: flex;
   flex-direction: column;
@@ -26,9 +27,8 @@
 
 
 img {
-  margin-top: 25px;
-  height: 10%;
-  height: 10%;
+  width: 25vw;
+  margin-top: 10px;
 }
 
 form{
@@ -42,7 +42,7 @@ form{
 
 
 form input{
-  height: 4vh;
+  height: 7vh;
   width: 80%;
   margin-top: 15px;
   margin-left: 10vw;
@@ -66,7 +66,7 @@ form input:focus{
 }
 
 form select{
-  height: 5vh;
+  height: 7vh;
   margin-top: 15px;
   width: 82%;
   margin-left: 10vw;
@@ -93,6 +93,11 @@ button{
   background-color: #fcfcfc;
   border: none;
   color: #0072bb;
+}
+
+.spacer{
+  width: 10vw;
+  height: 10vh;
 }
 
 }

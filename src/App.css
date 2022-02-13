@@ -1,8 +1,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Work+Sans:wght@100;200;300;400&display=swap');
 
+
+
+
 .App {
   text-align: center;
   
+}
+
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: #eeeeee;
+}
+
+.main .main-login{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 58vw;
+  height: 80vh;
+  
+  
+}
+
+
+
+.main-logo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .main-login img{
+  margin-top: 50px;
+  width: 15vw;
+}
+
+.main .main-login div h4{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #215083;
+}
+
+hr {
+  
+  width: 50%;
+}
+
+.main .btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main  .mui-btn{
+  margin:10px;
+  width: 20vw;
+}
+
+.copyright{
+  opacity: 0.6;
+  font-weight:100;
+  color: #215083;
+}
+
+
+
+.main .main-img{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./content/bg-final_1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: inset 6px 0px 10px rgba(0, 0,0, 0.2);
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  background-color: #215083;
+  width: 58vw;
+  height: 100vh;
+}
+
+/* .form-container{
+  position: absolute;
+  width: 100vw;
+  height:fit-content;
+  background-color: #1d2951;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+.form-container *{
+  font-family: 'Work Sans', sans-serif;
+  font-size: small;
+  width: 90%;
+  transform: scale(0.95);
+}
+
+form{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form h1{
+  font-size: x-large !important;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  color: #fcfcfc;
+  text-align: center;
+}
+
+form input{
+  height: 5vh;
+  margin-top: 10px;
+  color: #fcfcfc;
+  background-color: transparent;
+  border-top: none;
+  border-left:none ;
+  border-right: none;
+  border-bottom: 2px solid #fcfcfc;
+}
+
+form select{
+  height: 5vh;
+  margin-top: 20px;
+  width: 82%;
+  margin-left: 5px;
+  
+}
+
+form input::placeholder{
+  color: #fcfcfc;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+form input:focus{
+  outline: none;
+  background-color: #0067a5;
+}
+
+form .group{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form .group input{
+
+  margin: 5px;
+  width: 40%;
+}
+
+.form-container button{
+  align-self: center;
+  margin-top: 20px;
+  height: 5vh;
+  width: 7vw !important;
+  background-color: #fcfcfc;
+  border: none;
+  color: #0072bb;
+}
+
+.spacer{
+  width: 10vw;
+  height: 5vh;
+}
+
+@media (max-width:480px){
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main .main-login{
+  width: 100vw;
+  height: 100vh;
+}
+
+.main .main-login img{
+  margin-top: 50px;
+  width: 50vw;
+}
+
+.main hr{
+  display: none;  
+}
+
+
+.main .btn-div{
+  width: 100vw !important;
+}
+
+
+
+.main .mui-btn{
+  width: 50vw !important;
+  height: 7vh !important;
+}
+
+.main .main-img{
+  display: none;
+}
+
+.main h4{
+  color: #215083;
+}
+
+.main-bg {
+  display: none;
+}
+
+.copyright{
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+background-image: url('./content/bottom-bg.png');
+background-repeat: no-repeat;
+background-size: cover;
+height: 20vh;
+color: #fcfcfc;
+font-weight: lighter;
 }
 
 .form-container{
@@ -16,20 +256,7 @@
   align-items: center;
 }
 
-.form-container *{
-  font-family: 'Work Sans', sans-serif;
-  font-size: small;
-  
-}
 
-@media (max-width:480px){
-
-
-
-img {
-  width: 25vw;
-  margin-top: 10px;
-}
 
 form{
   width: 100vw;
@@ -85,7 +312,7 @@ form .group{
   justify-content: center;
 }
 
-button{
+.form-container button{
   align-self: center;
   margin-top: 20px;
   height: 5vh;

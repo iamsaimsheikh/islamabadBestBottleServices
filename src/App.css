@@ -23,10 +23,10 @@
 .main .main-login{
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
   width: 58vw;
-  height: 80vh;
+  height: 100vh;
   
   
 }
@@ -53,6 +53,7 @@
 hr {
   
   width: 50%;
+  border: 1px solid#215083;
 }
 
 .main .btn-div {
@@ -118,9 +119,26 @@ form{
 }
 
 form h1{
-  font-size: x-large !important;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 200;
+  font-size: 32px !important;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
   color: #fcfcfc;
+  text-align: center;
+}
+
+.btn-div p{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-weight: 200;
+  font-size: small;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+  color: #215083;
   text-align: center;
 }
 
@@ -186,9 +204,9 @@ form .group input{
 @media (max-width:480px){
 
 .main{
-  display: flex;
+  display: block;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
@@ -210,7 +228,10 @@ form .group input{
 
 
 .main .btn-div{
+  display: flex;
   width: 100vw !important;
+  justify-content: center !important;
+  
 }
 
 
@@ -218,6 +239,8 @@ form .group input{
 .main .mui-btn{
   width: 50vw !important;
   height: 7vh !important;
+  justify-content: center;
+  align-self: center;
 }
 
 .main .main-img{
@@ -247,14 +270,21 @@ font-weight: lighter;
 
 .form-container{
   position: absolute;
-  width: 100vw;
+  width: 100vw !important;
   height:fit-content;
-  background-color: #1d2951;
+  background-color: #003152;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center !important;
+  align-items:center;
 }
+
+.form-container *{
+  transform: scale(0.95);
+  width: 90%;
+}
+
+
 
 
 
@@ -263,22 +293,27 @@ form{
   height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 
 
 form input{
   height: 7vh;
-  width: 80%;
-  margin-top: 15px;
-  margin-left: 10vw;
+  width: 100% !important;
+  margin-top: 5px;
+  
   color: #fcfcfc;
   background-color: transparent;
   border-top: none;
   border-left:none ;
   border-right: none;
   border-bottom: 2px solid #fcfcfc;
+}
+
+.group input{
+  height: 7vh;
+  margin-top: 5px !important;
 }
 
 form input::placeholder{
@@ -294,9 +329,9 @@ form input:focus{
 
 form select{
   height: 7vh;
-  margin-top: 15px;
-  width: 82%;
-  margin-left: 10vw;
+  margin-top: 10px;
+  width: 100% !important;
+  margin-left: 2vw;
 }
 
 
@@ -309,14 +344,15 @@ hr{
 form .group{
   display: flex;
   width: 90vw;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .form-container button{
   align-self: center;
   margin-top: 20px;
   height: 5vh;
-  width: 25vw;
+  width: 25vw !important;
   background-color: #fcfcfc;
   border: none;
   color: #0072bb;
@@ -324,7 +360,7 @@ form .group{
 
 .spacer{
   width: 10vw;
-  height: 10vh;
+  height: 1vh;
 }
 
 }

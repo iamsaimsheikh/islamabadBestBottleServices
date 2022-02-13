@@ -1,13 +1,14 @@
 import React,{useState,useEffect} from 'react';
 import logo from '../content/ibbs-logo.png'
 import axios from 'axios'
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 
 
 
 
-function Form() {
+function Form({setSideScreen}) {
 
     // States
     const [total,setTotal] = useState(0)
@@ -79,7 +80,7 @@ function Form() {
 
       <form>
 
-      <h1>Order Form</h1>
+      <h1 > <ArrowBackIosNewIcon onClick={() => setSideScreen('home')} /> Order Form</h1>
 
         <select name='OT_name' onChange={onChange} value={data.OT_name} defaultValue={{label:"Asif",value:"Asif"}} >
             <option value="" disabled selected hidden>OT Name...</option>

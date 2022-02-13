@@ -3,10 +3,14 @@ import Button from '@material-ui/core/Button'
 import logo from '../content/ibbs-blue-8.png'
 import Form from '../containers/Form'
 
+import HomeScreenButtons from '../components/HomeScreenButtons';
+import LoginForm from '../components/LoginForm';
+
 
 function Main() {
 
     const [sideScreen,setSideScreen] = useState('home')
+    const [login,setLogin] = useState(false)
 
 
   return (
@@ -22,23 +26,14 @@ function Main() {
 
     <hr />
 
-    <div className='btn-div'>
-        <Button className='mui-btn' color='primary' variant='contained' size='large' style={{margin: "10px"}} onClick={() => {
-            setSideScreen('form')
-        }}>
-            Order Form
-        </Button>
-        <Button className='mui-btn'  color='primary' variant='outlined' size='large' style={{margin: "10px"}} >
-        Admin Login
-        </Button>
-    </div>
-
-    <hr />
+   {login === false ? <HomeScreenButtons setSideScreen={setSideScreen} setLogin={setLogin}/> : <LoginForm setLogin={setLogin} />} 
+    
+    
 
     <div className='copyright'>
         <h5>@copyright ibbs</h5>
         </div>
-    </div> </> : <Form />}
+    </div> </> : <Form setSideScreen={setSideScreen}/>}
 
     <div className='main-img'>
     </div> 
